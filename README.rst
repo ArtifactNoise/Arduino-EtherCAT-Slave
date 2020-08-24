@@ -12,8 +12,8 @@ Be sure to look at the license.
 example
 
 
-   LAN925X_SPI_Init();      <- It is absolutely necessary.
- 
+    LAN925X_SPI_Init();      <- It is absolutely necessary.
+
     // RESET
     //LAN9252_RESET();      <- option.
 
@@ -22,13 +22,13 @@ example
     rdata = LAN925X_SPI_READ(addr);
     sprintf(S1,"ID_REV[0x%04X]: 0x%08lX \n\r",addr,rdata);
     UART_TX_Stringth(S1);
-    
+
     // Chip BYTE_TEST register read.
     addr = BYTE_TEST;
     rdata = LAN925X_SPI_READ(addr);
     sprintf(S1,"BYTE_TEST[0x%04X]: 0x%08lX \n\r",addr,rdata);
     UART_TX_Stringth(S1);
-    
+
     // Chip FREE_RUN register read.
     addr = FREE_RUN;
     rdata = LAN925X_SPI_READ(addr);
