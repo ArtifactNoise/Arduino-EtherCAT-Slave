@@ -11,6 +11,7 @@ Be sure to look at the license.
 
 example
 
+::
 
     LAN925X_SPI_Init();      <- It is absolutely necessary.
 
